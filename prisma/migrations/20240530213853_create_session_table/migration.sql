@@ -1,5 +1,5 @@
 -- CreateTable
-CREATE TABLE "Session" (
+CREATE TABLE "WeeklyTrendingSession" (
     "id" TEXT NOT NULL,
     "shop" TEXT NOT NULL,
     "state" TEXT NOT NULL,
@@ -18,5 +18,5 @@ CREATE TABLE "Session" (
     "refreshToken" TEXT,
     "refreshTokenExpires" TIMESTAMP(3),
 
-    CONSTRAINT "Session_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "WeeklyTrendingSession_pkey" PRIMARY KEY ("id")
 );
