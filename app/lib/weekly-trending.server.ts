@@ -344,7 +344,12 @@ export async function syncWeeklyTrendingCollections(
     collections: rankedCollections.slice(0, 10),
   };
 
-  await setShopMetafields(admin, shopData.shop.id, selectedCollections, debug);
+  await setShopMetafields(
+    admin,
+    shopData.shop.id,
+    rankedCollections.slice(0, 10),
+    debug,
+  );
 
   return {
     shopName: shopData.shop.name,
