@@ -1,0 +1,17 @@
+name: Sync Weekly Trending
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run weekly trending sync
+        run: |
+          curl --fail --silent --show-error --max-time 180 --retry 2 --retry-delay 30 \
+            --request POST \
+            --header "Authorization: Bearer ${{ secrets.CRON_SYNC_TOKEN }}" \
+            https://camosignal-weekly-trending-collections.onrender.com/api/weekly-trending-sync

@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Ping health check
         run: |
-          curl --fail --silent --show-error --max-time 30 --retry 3 --retry-delay 10 \
+          curl --fail --silent --show-error --max-time 120 --retry 3 --retry-delay 20 \
             https://camosignal-weekly-trending-collections.onrender.com/healthz

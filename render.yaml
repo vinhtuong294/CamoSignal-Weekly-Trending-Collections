@@ -25,3 +25,7 @@ services:
         value: read_orders,read_products,write_products
       - key: DATABASE_URL
         sync: false
+      - key: CRON_SYNC_TOKEN
+        sync: false
+      - key: SHOPIFY_SHOP_DOMAIN
+        value: apepsd-ha.myshopify.com
