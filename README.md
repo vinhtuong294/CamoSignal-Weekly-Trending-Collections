@@ -8,7 +8,8 @@ last 7 days of orders and writes them to shop metafields for the theme.
 - Reads orders from the last 7 days.
 - Counts units sold for each product's collections.
 - Skips utility collections: `all`, `best-seller`, `best-sellers`,
-  `new-arrival`, `new-arrivals`, `graphictee`, `graphic-tee`.
+  `new-arrival`, `new-arrivals`, `graphictee`, `graphic-tee`,
+  `independence-day`, `independence day`.
 - Skips shipping protection style products.
 - Writes the top 2 collections to:
   `sidekick.weekly_trending_collections`

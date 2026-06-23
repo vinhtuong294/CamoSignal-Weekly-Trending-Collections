@@ -13,6 +13,8 @@ const EXCLUDED_COLLECTION_HANDLES = [
   "new-arrivals",
   "graphictee",
   "graphic-tee",
+  "independence-day",
+  "independence day",
 ];
 const EXCLUDED_PRODUCT_PHRASES = [
   "shipping protection",
